@@ -1,3 +1,40 @@
-*{
-    background-color: lightblue;
+ 
+* {
+    background-color: #FF69B4;
+    font-family:  'Trispace', sans-serif;
+    font-weight: 300;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin: 25px;
+}
+
+.egg{
+    width: 400px;
+    height: 400px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 900ms ease-in-out infinite backwards;
+    animation-name: animation-egg;
+    
+}
+
+@keyframes animation-egg{
+    0%{
+        transform: rotate(0) ;
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
