@@ -1,9 +1,33 @@
  
 * {
-    background-color: #FF69B4;
+    /* background-color: #FF69B4; */
     font-family:  'Trispace', sans-serif;
     font-weight: 300;
+    /* color: black; */
 }
+
+/* NAV BAR  */
+
+.lights {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.lightMode{
+    background-color: #FF69B4; 
+}
+
+.darkMode {
+    background-color: #C71585;
+}
+
+
+/* BODY */
+
 
 h1{
     display: flex;
@@ -11,8 +35,6 @@ h1{
     padding: 55px;
     margin: auto;
 }
-
-
 
 
 .egg{
@@ -25,6 +47,24 @@ h1{
     animation-name: animation-egg;
     
 }
+
+
+#submitName {
+    padding: 25px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+#metrics{
+    list-style: none;
+}
+
+.nameOfTamagotchi{
+    font-size: 24px;
+}
+
 
 @keyframes animation-egg{
     0%{
@@ -45,11 +85,11 @@ h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .15ems;  
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
-  }
+}
   
   /* The typing effect */
   @keyframes typing {
