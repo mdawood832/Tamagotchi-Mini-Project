@@ -4,6 +4,7 @@
     font-family:  'Trispace', sans-serif;
     font-weight: 300;
     /* color: black; */
+    /* margin: auto; */
 }
 
 /* NAV BAR  */
@@ -15,15 +16,24 @@
     font-size: 16px;
     border-radius: 5px;
     border-color: black;
+    font-size: 24px;
 }
 
 .lightMode{
     background-color: #FF69B4; 
+    font-weight: bold;
 }
 
 .darkMode {
     background-color: #C71585;
+    font-weight: bold;
 }
+
+.control{
+   
+}
+
+
 
 
 /* BODY */
@@ -34,6 +44,7 @@ h1{
     justify-content: center;
     padding: 55px;
     margin: auto;
+    font-weight: bold;
 }
 
 
@@ -59,10 +70,39 @@ h1{
 
 #metrics{
     list-style: none;
+    font-size: 24px;
+    width: 200px;
+    margin: 0;
+    padding: 10px;
 }
 
+#rules{
+    list-style: none;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    width: 400px;
+    padding-right: 24px;
+    margin-left: 600px;
+    margin-left: 1000px;
+    margin-top: -250px;
+   
+}
+
+.rule{
+   padding: 10px;
+}
+
+#rulesHeadline{
+    font-weight: bold;
+    display: flex;
+    align-content: flex-end;
+}
+
+
 .nameOfTamagotchi{
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 
@@ -91,10 +131,10 @@ h1 {
       blink-caret .75s step-end infinite;
 }
   
-  /* The typing effect */
-  @keyframes typing {
+/* The typing effect */
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
+}
   
  

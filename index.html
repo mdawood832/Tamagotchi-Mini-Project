@@ -15,10 +15,10 @@
 
 <body>
     <nav>
-        <button class="lights lightMode" onclick="lightMode()">Light Mode</button>
-        <button class="lights darkMode" onclick="darkMode()"> Dark Mode</button>
-        <button class="lights feed" onclick="feedPet()">Feed</button>
-        <button class="lights Play" onclick="playWithTamaGotchi()">Play</button>
+        <button class="lights lightMode" onclick="lightMode() ,increaseSleepiness ()">Light Mode</button>
+        <button class="lights darkMode" onclick="darkMode(), decreaseSleepiness()"> Dark Mode</button>
+        <button class="lights control feed" onclick="feedPet()">Feed</button>
+        <button class="lights control Play" onclick="playWithTamaGotchi()">Play</button>
     </nav>
     <h1 id="welcome">Welcome to Tamagotchi</h1>
     
@@ -32,6 +32,23 @@
        <li id="age">Age</li>
     </ul>
 
+    <!-- <ul id="rules">
+        <h2 id="rulesHeadline">Rules</h2>
+        <li class="rule">1. Feed the Tamagotchi, 
+            if left unattained and Hunger reaches 10, 
+            Tamagotchi will perish
+        </li>
+
+        <li class="rule">2. Let Tamagotchi sleep by turning on Dark Mode, 
+            if left unattained and sleepiness reaches 10, 
+            Tamagotchi will perish
+        </li>
+
+        <li class="rule">3. Play with Tamagotchi, 
+            if left unattained and Boredom reaches 10, 
+            Tamagotchi will perish
+        </li>
+    </ul> -->
     <!-- <form id="submitName">
         Name your Tamagotchi: <input type="text" name="name">
         <input id= " submitNameOfTama"type="submit" value="Submit">
