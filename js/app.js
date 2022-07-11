@@ -43,7 +43,7 @@ function increaseHunger () {
         // hunger, then stop hunger 
     }
 }
-const hungerInterval = setInterval(increaseHunger,1000)
+const hungerInterval = setInterval(increaseHunger,2000)
 // ------------------------------------------------------------------------------>
 // PLAYING WITH PET 
 function playWithTamaGotchi () {
@@ -121,7 +121,7 @@ body.style.backgroundColor = '#FF69B4'
 //it starts with the same colors as light mode 
 
 function lightMode () { //this just turns on lightmode and displays sleepiness
-    document.body.style.backgroundColor = '#FF69B4'
+    // document.body.style.backgroundColor = '#FF69B4'
     // document.body.style.color = '#FFC0CB'
     let sleepiness = document.querySelector('#sleepiness')
     sleepiness.innerHTML = `Sleepiness: ${character.sleepiness++}`
@@ -130,7 +130,8 @@ function lightMode () { //this just turns on lightmode and displays sleepiness
         alert('Your Tamagotchi has gone to heaven')
     }     
 }
-// const upSleepiness = setInterval(lightMode, 2000)
+//anonymous function increase sleepiness in set interval, should handle the conditional in line 128
+const upSleepiness = setInterval(lightMode, 2000)
 //so I can call clear interval
 
 // function increaseSleepiness (){ //this increases the sleepingess rader
